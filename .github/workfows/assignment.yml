@@ -1,0 +1,12 @@
+name: Simple Test Action
+
+on:
+  workflow_dispatch:  # allows manual run
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 24f2001637@ds.study.iitm.ac.in
+        run: echo "Hello, GitHub Actions!"
