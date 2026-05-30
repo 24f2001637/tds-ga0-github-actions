@@ -1,12 +1,18 @@
-name: Simple Test Action
+name: TDS Week0 Assignment
 
 on:
-  workflow_dispatch:  # allows manual run
+  workflow_dispatch:
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
       - name: 24f2001637@ds.study.iitm.ac.in
-        run: echo "Hello, GitHub Actions!"
+        run: echo "Hello, world!"
+
+      - name: Finish
+        run: echo "Workflow completed"
